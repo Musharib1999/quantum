@@ -22,6 +22,7 @@ This is where quantum computers can come to the rescue.
 
 Quantum computers can take this problem, and find the secret number with just one step.
 Using IBM’s Qiskit, I implemented this algorithm, along with circuit visualizations with a step by step process.
+Similarly we have applied bernstein-vazirani using cirq on dwave.
 
 First we create a quantum circuit for as many qubits or bits we want by taking one extra qubit to fulfill the need of algorithm.Then we apply Hadamard Gate to all the qubits and apply bit flip gate to the last qubit.Then we enumerate for qubits those are ones and apply controlled not gate to them.Then we again apply Hadamard gate to all qubits to make them out of superposition.At last we measure our circuit by using measure() function and then draw our circuit.
 Then we take our simulator from Aer.get_backend from "qasm_simulator".Then we execute the result by importing histogram from qiskit visualization library.
